@@ -93,10 +93,10 @@ public class NoPhantomsCommand implements AnnoyingCommand {
         final String status;
         if (player.getScoreboardTags().contains("pp_no-phantoms")) {
             player.removeScoreboardTag("pp_no-phantoms");
-            status = "enabled";
+            status = "True";
         } else {
             player.addScoreboardTag("pp_no-phantoms");
-            status = "disabled";
+            status = "False";
         }
 
         // Messages
